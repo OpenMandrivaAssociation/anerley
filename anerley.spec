@@ -63,7 +63,6 @@ rm -rf %{buildroot}
 %files -n %{libname}
 %defattr(-,root,root,-)
 %doc COPYING NEWS AUTHORS README ChangeLog
-%exclude %{_libdir}/*.la
 %{_datadir}/%{name}/*
 %{_libdir}/*.so.*
 %{_datadir}/locale/*
@@ -73,5 +72,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %{_libdir}/*.so
 %{_libdir}/*.a
+%{_libdir}/*.la
 %{_includedir}/anerley/*
 %{_libdir}/pkgconfig/*.pc
