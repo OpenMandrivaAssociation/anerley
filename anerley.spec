@@ -42,7 +42,7 @@ Header files and libraries for anerley
 %setup -q -n %{name}-%{version}
 
 %build
-./autogen.sh
+NOCONFIGURE=1 ./autogen.sh
 %configure2_5x
 %make
 
