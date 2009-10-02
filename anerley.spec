@@ -16,6 +16,7 @@ BuildRequires: libglib2-devel
 BuildRequires: libtelepathy-glib-devel
 BuildRequires: libmissioncontrol-devel
 BuildRequires: nbtk-devel
+BuildRequires: gnome-common
 
 %description
 Anerley people widgets for Moblin
