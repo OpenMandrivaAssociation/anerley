@@ -29,7 +29,7 @@ Anerley people widgets for Moblin
 
 %package -n %{develname}
 Summary: Anerley development environment
-Group: Development/Libraries
+Group: Development/C
 
 Requires: %{libname} = %{version}-%{release}
 Requires: pkgconfig
