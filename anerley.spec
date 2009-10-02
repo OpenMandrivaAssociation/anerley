@@ -12,9 +12,9 @@ Release: %mkrel 1
 Source0: http://git.moblin.org/cgit.cgi/%{name}/snapshot/%{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
-BuildRequires: libglib2-devel
+BuildRequires: glib2-devel
 BuildRequires: libtelepathy-glib-devel
-BuildRequires: libmissioncontrol-devel
+BuildRequires: telepathy-mission-control-devel
 BuildRequires: nbtk-devel
 BuildRequires: gnome-common
 
