@@ -64,7 +64,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc COPYING NEWS AUTHORS README ChangeLog
 %{_datadir}/%{name}/*
-%{_libdir}/*.so.*
+%{_libdir}/*.so.%{major}*
 %{_datadir}/locale/*
 
 
