@@ -18,6 +18,7 @@ BuildRequires: telepathy-mission-control-devel
 BuildRequires: nbtk-devel
 BuildRequires: gnome-common
 BuildRequires: intltool
+BuildRequires: evolution-data-server-devel
 
 %description
 Anerley people widgets for Moblin
