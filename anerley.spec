@@ -15,7 +15,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libglib2-devel
 BuildRequires: libtelepathy-glib-devel
 BuildRequires: libmissioncontrol-devel
-BuildRequires: libnbtk-devel
+BuildRequires: nbtk-devel
 
 %description
 Anerley people widgets for Moblin
