@@ -25,7 +25,7 @@ Anerley people widgets for Moblin
 
 %package -n %{libname}
 Summary: Anerley library for people widgets on Moblin
-Group: Development/Libraries
+Group: System/Libraries
 
 %description -n %{libname}
 Anerley people widgets for Moblin
