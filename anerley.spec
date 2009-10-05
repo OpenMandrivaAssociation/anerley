@@ -35,8 +35,6 @@ Summary: Anerley development environment
 Group: Development/C
 
 Requires: %{libname} = %{version}-%{release}
-Requires: pkgconfig
-Requires: %{libname} >= %{version}
 
 %description -n %{develname}
 Header files and libraries for anerley
