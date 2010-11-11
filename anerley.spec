@@ -3,15 +3,14 @@
 %define develname       %mklibname %{name} -d
 
 Name: anerley
-Summary: People widgets for Moblin
+Summary: People widgets for MeeGo
 Group: System/Libraries
-Version: 0.1.7
+Version: 0.2.14
 License: LGPL 2.1
-URL: http://www.moblin.org
-Release: %mkrel 2
-Source0: http://git.moblin.org/cgit.cgi/%{name}/snapshot/%{name}-%{version}.tar.bz2
+URL: http://www.meego.com
+Release: %mkrel 1
+Source0: http://repo.meego.com/MeeGo/releases/1.1/netbook/repos/source/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
 BuildRequires: glib2-devel
 BuildRequires: libtelepathy-glib-devel
 BuildRequires: telepathy-mission-control-devel
@@ -21,7 +20,7 @@ BuildRequires: intltool
 BuildRequires: evolution-data-server-devel
 
 %description
-Anerley people widgets for Moblin
+Anerley people widgets for MeeGo
 
 %package -n %{libname}
 Summary: Anerley library for people widgets on Moblin
@@ -44,7 +43,7 @@ Header files and libraries for anerley
 %setup -q -n %{name}-%{version}
 
 %build
-NOCONFIGURE=1 ./autogen.sh
+autoreconf --install
 %configure2_5x
 %make
 
@@ -58,6 +57,10 @@ for f in `ls %{buildroot}/%{_datadir}/doc/`; do
 		mv %{buildroot}/%{_datadir}/doc/$f %{buildroot}/%{_datadir}/doc/%{name}-%{version}
 	fi
 done
+
+rm %{buildroot}%{_sysconfdir}/xdg/autostart/anerley-account-starter.desktop
+rm %{buildroot}%{_libdir}/anerley-account-starter
+
 
 %clean
 rm -rf %{buildroot}
